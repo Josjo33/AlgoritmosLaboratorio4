@@ -1,7 +1,12 @@
 package Actividades;
 
 public class BinarySearchRecursive {
-    
+    /**
+     * @param arr Arreglo ordenado.
+     * @param lo  Índice inicial.
+     * @param hi  Índice final.
+     * @param x   Elemento a buscar.
+     * */
     public int binarySearch(int arr[], int lo, int hi, int x) {
         if (hi >= lo && lo < arr.length) {
             int mid = lo + (hi - lo) / 2;
