@@ -22,7 +22,8 @@ public class BinarySearchRecursive {
     public static void main(String[] args) {
         BinarySearchRecursive ob = new BinarySearchRecursive();
         int arr[] = { 1, 2, 3, 4, 5 }; // Arreglo ordenado
-        int x = 4;
+        int x = 4; // Elemento a buscar
+        // Llamada al método de búsqueda binaria
         int position = ob.binarySearch(arr, 0, arr.length - 1, x);
         System.out.println(position == -1 ? "Elemento no encontrado" : "Elemento en índice: " + position);
     }
