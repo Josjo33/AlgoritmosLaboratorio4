@@ -3,8 +3,7 @@ package Actividades;
 public class Hanoi {
 
     public static void main(String[] args) {
-        int numDiscos = 3; 
-        int torreOrigen = 1; 
+        int numDiscos = 3;  
         int torreAuxiliar = 2; 
         int torreDestino = 3; 
 
@@ -23,13 +22,13 @@ public class Hanoi {
             return;
         }
 
-        // Paso 1: Mover n-1 discos de origen a auxiliar 
+        // Paso 1: Mover n-1 discos de origen a auxiliar (usando destino como auxiliar)
         resolverHanoi(discos - 1, origen, auxiliar, destino);
 
         // Paso 2: Mover el disco más grande (n) de origen a destino
         System.out.println("Mover disco " + discos + " de torre " + origen + " a torre " + destino);
 
-        // Paso 3: Mover n-1 discos de auxiliar a destino 
+        // Paso 3: Mover n-1 discos de auxiliar a destino (usando origen como auxiliar)
         resolverHanoi(discos - 1, auxiliar, destino, origen);
     }
 }
