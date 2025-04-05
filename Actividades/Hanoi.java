@@ -6,6 +6,7 @@ public class Hanoi {
         int numDiscos = 3;  
         int torreAuxiliar = 2; 
         int torreDestino = 3; 
+        int torreOrigen = 1; // Define the origin tower
 
         if (numDiscos <= 0) {
             System.out.println("Error: El número de discos debe ser positivo.");
